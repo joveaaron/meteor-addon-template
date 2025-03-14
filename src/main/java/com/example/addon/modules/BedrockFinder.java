@@ -1,6 +1,6 @@
 package com.example.addon.modules;
 
-import com.example.addon.Addon;
+import com.example.addon.AddonTemplate;
 import meteordevelopment.meteorclient.events.world.ChunkDataEvent;
 import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
@@ -36,7 +36,7 @@ public class BedrockFinder extends Module {
     public static ExecutorService executor = Executors.newSingleThreadExecutor();
 
     public BedrockFinder() {
-        super(Addon.CATEGORY, "BedrockFinder", "");
+        super(AddonTemplate.CATEGORY, "BedrockFinder", "");
     }
    LinkedHashSet<BlockPos> bedrockPos = new LinkedHashSet<>();
 
